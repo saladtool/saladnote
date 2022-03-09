@@ -38,7 +38,7 @@ const env = envFromArgs(process.argv);
 const profilePath = profileFromArgs(process.argv);
 const isDebugMode = !!process.argv && process.argv.indexOf('--debug') >= 0;
 
-electronApp.setAsDefaultProtocolClient('joplin');
+electronApp.setAsDefaultProtocolClient('saladnote');
 
 const initialCallbackUrl = process.argv.find((arg) => isCallbackUrl(arg));
 
